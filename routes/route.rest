@@ -1,3 +1,4 @@
+
 GET http://localhost:5000/users
 
 ###
@@ -8,25 +9,26 @@ GET http://localhost:5000/users/678393e7a0f1df17cfbcef25
 POST http://localhost:5000/users
 Content-Type: application/json
 
- {
-        "username": "Sophie_Claire",
-        "first_name": "Sophie",
-        "last_name": "Claire",
-        "email": "sophieClaire@gmail.com",
+{
+        "username": "",
+        "first_name": "Mason",
+        "last_name": "Andy",
+        "email": "masonAnderson@gmail.com",
         "profile": {
-            "profile_pic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRf8JQ03uImWos_jnR9cRqivwYsP8q6bWbAg&s",
-            "bio": "",
-            "designation": "Software Engineer",
+            "profile_pic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8Uromh_o6Q1F7R1c3rM0Cplb0RqTIxX85bg&s",
+            "bio": "Engineer with a passion for robotics.",
+            "designation": "Robotics Engineer",
             "status": "Active",
-            "phone_number": "+1 123 456 67",
-            "account_name": "Sophie97",
-            "account_open_date": "1290880311",
-            "location": "London|UK",
-            "transaction": 340,
-            "transaction_status": "Approved",
+            "phone_number": "+1 567 890 12",
+            "account_name": "MasonBot",
+            "account_open_date": "1418083200000",
+            "location": "San Francisco|USA",
+            "transaction": 100,
+            "transaction_status": "100",
             "gender": "Female"
         }
     }
+ 
 ###
 
 DELETE http://localhost:5000/users/678393e7a0f1df17cfbcef25
@@ -80,8 +82,18 @@ GET http://localhost:5000/products/678393e7a0f1df17cfbcef25
 POST http://localhost:5000/products
 Content-Type: application/json
 
-
-
+{
+        "name": "abc",
+        "product_pic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxXNh-9EKFU61dvHWJEaGi4qkGQ782TAztLg&s",
+        "description": "Portable waterproof Bluetooth speaker with deep bass and 12-hour battery life.",
+        "price": "119.99",
+        "stock": 600,
+        "status": "in_stock",
+        "created_at": "1687392000000",
+        "updated_at": "1687392000000",
+        "sales": 15000,
+        "active": "Yes"
+    }
 ###
 
 DELETE http://localhost:5000/products/678393e7a0f1df17cfbcef25
@@ -103,3 +115,13 @@ Content-Type: application/json
         "sales": 5000,
         "active": "Yes"
     }
+
+###
+
+PATCH  http://localhost:5000/products/6786c49f75519a535e6e69ec
+Content-Type: application/json
+
+ {
+            "created_at": "1687392000000"
+    }
+    
