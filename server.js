@@ -13,7 +13,7 @@ app.use(express.json());
 
 const cors = require("cors");
 var corsOptions = {
-  origin: "http://localhost:5173",
+  origin: ["http://localhost:5173", "https://aishwarya-kanago.github.io"],
   optionsSuccessStatus: 200,
   methods: "GET, PUT, POST, PATCH, DELETE",
 };
